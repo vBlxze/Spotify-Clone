@@ -1,0 +1,70 @@
+.border {
+	border: 2px solid red;
+	margin: 3px;
+}
+
+.logo img
+{
+	width: 120px;
+}
+
+.flex {
+	display: flex;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.p-1 {
+	padding: 12px;
+}
+
+.bg-grey {
+	background-color: #121212;
+	color: white;
+}
+
+.bg-black {
+	background-color: black;
+	color: white;
+}
+
+.invert {
+	filter: invert(1);
+}
+
+.rounded {
+	border-radius: 4px;
+}
+
+.margin-1 {
+	margin: 3px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 4px;
+    border: 2px solid #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.body {
+    scrollbar-color: #333 #1a1a1a;
+    scrollbar-width: thin;
+}
