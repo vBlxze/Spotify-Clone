@@ -73,6 +73,39 @@ async function getSongsFromDirectory(folder) {
 		});
 	});
 
+	Array.from(document.querySelectorAll(".songList ul li")).forEach((songItem) => {
+		songItem.addEventListener("click", (e) => {
+			// Reset all play buttons to "play" state
+			document.querySelectorAll(".playNow > img").forEach(btn => {
+				btn.src = "img/play.svg";
+			});
+
+			document.querySelectorAll(".playNow > span").forEach(e => {
+				e.textContent = "Play Now";
+			})
+
+			e.textContent = "Playing Now";
+
+			// Change the clicked song's play button to "pause" state
+			const playButton = songItem.querySelector(".playNow > img");
+			if (playButton) {
+				playButton.src = "img/pause.svg";
+			}
+		});
+	});
+
+	document.querySelectorAll(".playNow").forEach(playButton => {
+		playButton.addEventListener("click", (e) => {
+			// Reset all play buttons to "play" state
+			document.querySelectorAll(".playNow > img").forEach(btn => {
+				btn.src = "img/play.svg";
+			});
+
+			// Change the clicked play button to "pause" state
+			e.target.src = "img/pause.svg";
+		});
+	});
+
 	return songs;
 }
 

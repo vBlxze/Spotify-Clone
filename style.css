@@ -311,6 +311,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 12px;
+	cursor: pointer;
 }
 
 .range {
